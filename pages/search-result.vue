@@ -112,7 +112,6 @@ export default {
 <style scoped>
   .custom__button {
     /* @apply tw-opacity-30; */
-
     box-shadow: -4px 4px 0rem rgb(215 163 0 / 88%);
   }
 </style>

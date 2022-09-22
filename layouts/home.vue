@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Menu />
+    <Menu logo="coat_of_arms_of_nigeria_green.svg" :showBorder="true"/>
 
     <Nuxt />
   </div>

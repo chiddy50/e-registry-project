@@ -1,31 +1,6 @@
 <template>
   <div>
-    <div class="tw-bg-gray-200">
-      <div class="
-      tw-w-9/12
-      tw-mx-auto
-      tw-bg-gray-200
-      tw-py-10
-      tw-flex
-      tw-justify-between
-      ">
-        <h1 class="
-        tw-text-4xl
-        tw-text-gray-500
-        tw-font-bold
-        ">
-        Company
-        </h1>
-        <button class="
-        tw-rounded-lg
-        tw-bg-green-500
-        tw-text-white
-        tw-w-32
-        ">
-          Edit
-        </button>
-      </div>
-    </div>
+    <Banner title='Company' :showButton="true" buttonTxt="Edit"/>
 
     <div>
 
@@ -35,8 +10,17 @@
       tw-mt-8
       tw-flex
       tw-gap-8
+      tw-flex-col
+      lg:tw-flex-row
       ">
-        <div class="tw-relative">
+      <div class="
+      tw-flex
+      tw-justify-center
+      ">
+        <div class="
+        tw-relative
+        tw-w-max
+        ">
           <img class="tw-rounded-full tw-w-40" src="~assets/img/user_img.png" alt="user_img">
           <i class='
           bx bxs-error-circle
@@ -47,6 +31,7 @@
           tw-text-4xl
           '></i>
         </div>
+      </div>
         <div class="tw-flex-1">
           <InputItem :label="'Name'" :value="'John Doe'"/>
           <InputItem :label="'Location'" :value="'Abuja'"/>
